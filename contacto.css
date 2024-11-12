@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo de la página */
+    margin: 0; /* Eliminar márgenes del body */
+    padding: 0; /* Eliminar padding del body */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+.about-container {
+    max-width: 100%; /* Cambiado a 100% para que ocupe todo el ancho */
+    margin: 0; /* Eliminar margen para que ocupe todo el espacio */
+    background: white; /* Fondo blanco */
+    padding: 20px; /* Padding interno */
+    border-radius: 0; /* Eliminar bordes redondeados si es necesario */
+    box-shadow: none; /* Eliminar sombra si no se desea */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Mantiene las columnas */
+}
+
+.team-member {
+    background: #e2e2e2;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px; /* Mantener el padding del perfil */
+    text-align: center;
+    width: 220px; /* Mantener el tamaño original de los perfiles */
+    transition: transform 0.2s;
+}
+
+.team-member img {
+    width: 100px; /* Tamaño fijo para las imágenes */
+    height: 100px; /* Tamaño fijo para las imágenes */
+    border-radius: 50%; /* Hace que las imágenes sean redondas */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); /* Corte diagonal ajustado */
+}
+
+.team-member h3 {
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    color: #777;
+}
+
+.profile-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px; /* Tamaño de botón original */
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.profile-link:hover {
+    background: #0056b3;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para organizar miembros en dos columnas */
+.team-member:nth-child(odd) {
+    margin-right: 20px; /* Espacio a la derecha de los miembros en la columna izquierda */
+}

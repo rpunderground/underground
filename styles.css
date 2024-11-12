@@ -1,0 +1,327 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root{
+    --dark-blue:#12232E;
+    --white:#EEFBFB;
+    --blue:#007CC7;
+    --sky-blue:#4DA8DA;
+    --yellow: #ffcc00;
+    --font-1:'Staatliches', cursive;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--white);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-1);
+}
+body{
+    background-color: var(--yellow);
+}
+h1,h2,h3,h4,h5,p{ 
+    font-family: var(--font-1);
+}
+hr{
+    margin: 1rem 0;
+    border: 2px solid var(--white);
+}
+.navbar {
+    position: absolute; /* Mantiene la posición absoluta */
+    top: 0; /* Asegúrate de que esté en la parte superior */
+    right: 0; /* Mueve la barra de navegación al borde derecho */
+    z-index: 1;
+    padding: 1rem 0; /* Elimina el padding lateral para que esté pegado al borde */
+    display: flex; /* Usar flex para alinear horizontalmente */
+    justify-content: space-between; /* Espacio entre el logo y los enlaces */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    background-color: var(--dark-color); /* Cambia esto si necesitas un fondo */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+
+.navbar .left-part {
+    display: flex; /* Usar flex para la parte izquierda */
+    align-items: center; /* Centrar el logo verticalmente */
+}
+
+.navbar .right-part {
+    display: flex; /* Usar flex para la parte derecha */
+    align-items: flex-start; /* Alinea los enlaces en la parte superior */
+    margin-top: 2rem; /* Ajusta este valor para bajar los enlaces */
+}
+
+.navbar ul {
+    display: flex; /* Usar flex para las listas */
+    padding: 0; /* Eliminar padding por defecto */
+    margin: 0; /* Eliminar margen por defecto */
+}
+
+.navbar li {
+    font-family: var(--font-1);
+    list-style: none;
+    margin: 0 2rem; /* Espaciado horizontal entre elementos */
+}
+
+.navbar .logo img {
+    width: 10rem; /* Ajusta el tamaño del logo a 10rem */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+.navbar a {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.navbar a:hover {
+    color: var(--yellow);
+    text-shadow: 0px 0px 30px var(--yellow);
+    transition: all 0.2s ease-in;
+}
+
+.banner-container{
+    position: relative;
+    text-align: center;
+}
+.banner-text{
+    width: 80%;
+    text-shadow:0px 0px 30px var(--yellow);
+    letter-spacing: .5rem;
+    color: var(--white);
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.connect-btn{
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--yellow);
+    margin-top: 1rem;
+    border:0px;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+}
+.connect-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 4px var(--yellow);
+}
+.banner-text img:first-of-type{
+    width: 6rem;
+    height: auto;
+    position: relative;
+    left: 4rem;
+    top: 2rem;
+}
+
+.banner-text rp{
+    width: 80%;
+    text-shadow:0px 0px 30px var(--yellow);
+    letter-spacing: .5rem;
+    color: var(--white);
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text img:nth-of-type(2){
+    width: 6rem;
+    height: auto;
+    position: relative;
+    right: 4rem;
+    top: 2rem;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.white-container{
+    text-align: center;
+    margin-top: -5rem;
+    transform: skewY(-4deg);
+    position: relative;
+    width: 100%;
+    background-color: var(--white);
+    height: 500px;
+}
+.white-container-2{
+    text-align: center;
+    margin-top: -10rem;
+    transform: skewY(-4deg);
+    position: relative;
+    width: 100%;
+    background-color: var(--white);
+    height: 500px;
+}
+.heading-text {
+    font-size: 5rem; /* Mantiene el tamaño */
+    margin-top: 7rem; /* Ajusta este valor según necesites */
+}
+.heading-text span{
+    color: var(--yellow);
+}
+.heading-tittle {
+    font-size: 5rem; /* Mantiene el tamaño */
+    margin-top: 2rem; /* Ajusta este valor según necesites */
+}
+.heading-tittle span{
+    color: var(--yellow);
+}
+.small-container{
+    color: #252525;
+    padding-top: 2rem;
+    margin:0 20%;
+}
+.small-container-2{
+    color: #252525;
+    padding-top: 14rem;
+    margin:0 20%;
+}
+.text{
+    font-size: 1.5rem;
+}
+.b-text{
+    font-size: 2rem;
+}
+
+.text span, .b-text span{
+    color: var(--yellow);
+}
+.two-images-container{
+    margin-top: -10rem;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+.two-images-container img {
+    width: 100%;
+}
+.two-images-container .img-1, .two-images-container .img-2{
+    position: relative;
+    transform: skewY(-4deg);
+}
+
+.two-images-container .img-1-text{
+    font-size: 5rem;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.two-images-container .img-2-text{
+    font-size: 5rem;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+.two-images-container .img-1-text span, .two-images-container .img-2-text span{
+    color: var(--yellow);
+}
+.pop-img-1{
+    text-align: center;
+    margin-top: -39.2rem;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-top: -40rem; /* Ajusta este valor según necesites */
+    margin-left: -2rem; /* Ajusta este valor para moverla a la izquierda */
+}
+.pop-img-1 img{
+    width: 18%;
+}
+.image-container{
+    transform: skewY(-4deg);
+    position: relative;
+    margin-top: -5rem;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); /* Corte diagonal ajustado */
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.box{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr;
+}
+.boxes{
+    color: var(--white);
+    font-size: 4rem;
+}
+.car-float-img img{
+    width: 23rem;
+    position:absolute;
+    right: 10rem;
+    top: -2rem;
+}
+
+.man-float-img img{
+    width: 13rem;
+    position:absolute;
+    left: 10rem;
+    top: 10rem;
+}
+.gangster-float-img img{
+    width: 11rem;
+    position:absolute;
+    right: 10rem;
+    top: 23rem;
+}
+.bag-float-img img{
+    width: 28rem;
+    position:absolute;
+    left: 10rem;
+    top: 37rem;
+}
+footer {
+    background-color: var(--dark-blue); /* Color de fondo del footer */
+    color: var(--white); /* Color del texto */
+    padding: 2rem 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el texto */
+    position: relative; /* Asegura que el footer esté en su posición normal */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    z-index: 1; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+.footer-content {
+    max-width: 800px; /* Limita el ancho del contenido del footer */
+    margin: 0 auto; /* Centra el contenido */
+    font-size: 1.2rem; /* Tamaño de fuente del texto */
+}
+
+.footer-content p {
+    margin: 0.5rem 0; /* Espaciado entre párrafos */
+}
